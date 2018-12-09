@@ -29,10 +29,10 @@ var getAllrecords = function () {
     }
   );
 }
+
 var getOnerecord = function (id) {
   $.getJSON(`https://api.airtable.com/v0/appaje82QQOSfrmgt/Table%201/${id}?api_key=keyx07NheOELyB6Uu`,
     function (record) {
-     
       var html = [];
       var name = record.fields['Name'];
       var address = record.fields['Address'];
@@ -44,6 +44,7 @@ var getOnerecord = function (id) {
     }
   );
 }
+
 var listView = function (id, name, address, rating, picture, inorout) {
   return `
   <div class="card" style=" height: 540px; width: 17rem; display: inline-flex;">
@@ -53,11 +54,8 @@ var listView = function (id, name, address, rating, picture, inorout) {
     <p class="card-text"> ${address}<br>${rating}<br>${inorout}</p>
   </div>
 </div>
-
-  
   `;
 }
-
 
 var detailView = function (name, address, rating, picture, inorout) {
   return `
@@ -80,4 +78,4 @@ if (id) {
   getOnerecord(id);
 } else {
   getAllrecords();
-}
+} 

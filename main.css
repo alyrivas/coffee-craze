@@ -39,6 +39,8 @@ h1 {
     margin-left: 50px;
     margin-bottom: 60px;
     box-sizing: border-box;
+    border-radius: .25rem; 
+    font-size: 15px;
 }
 h2 { 
     color: burlywood; 

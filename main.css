@@ -1,27 +1,23 @@
 img {
     width : relative;  
-    height : 255px; 
+    height : 250px; 
 }
 body { 
     background-image : url("https://shortstatusquotes.com/wp-content/uploads/2016/03/coffee-cup-e1458103823199.jpg"); 
     background-size: cover;
 }
 h1 { 
-    font-family: verdana; 
-    text-align : center; 
+    font-family: white; 
+    text-align : left; 
     padding-left : 490px;
     text-shadow: 3px 2px peru; 
     letter-spacing: 3px;  
 }
-p { 
-    text : black; 
-}
 .font { 
       color: red; 
       font-family: 'Courier New'; 
-      font-size: 18px; 
       font-weight: bold; 
-     }
+      }
 
 .list { 
     color:brown; 
@@ -37,11 +33,23 @@ p {
     font-size: 2px; 
 }
 .card { 
-    font-size: 15px;  
-    letter-spacing: 2px; 
-    font-weight: bold; 
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
 }
 h2 { 
     color: burlywood; 
     
+}
+.card-body { 
+    box-shadow: 3px 7px; 
+ 
+}
+.w3-container { 
+    background-color: white; 
+    width: 2000px; 
+    text-align: center 20px; 
 }
